@@ -28,6 +28,11 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
   </ItemGroup>
+  <ItemGroup> 
+    <Content Include="StaticFiles\**"> 
+     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory> 
+    </Content> 
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="StaticFiles\Images\Products\" />
