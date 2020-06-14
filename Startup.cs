@@ -51,7 +51,7 @@ namespace Ecomak
             services.AddScoped<IUserService, UserService>();
             services.AddEntityFrameworkSqlServer();
             services.AddDbContext<EcomakDbContext>(options =>
-                options.UseSqlServer(
+                options.UseMySql(
                     Configuration.GetConnectionString("EcomakApiDatabase")
                     )
             );
